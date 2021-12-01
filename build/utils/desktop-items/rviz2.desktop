@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Name=RViz2
+GenericName=RViz2
+Comment=Rviz with the Agrobot loaded
+Exec=bash -c "source /opt/ros/kinetic/setup.bash&& source ~/catkin_ws/devel/setup.bash&& export TURTLEBOT3_MODEL=waffle_pi&& roslaunch turtlebot3_gazebo turtlebot3_gazebo_rviz.launch"
+Icon=/opt/ros/kinetic/share/rqt_gui/resource/rqt.png
+Type=Application
+Terminal=true
+Categories=Application
+X-KeepTerminal=true
+Name[C]=RViz Agrobot

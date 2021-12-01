@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Name=Train Navigation
+GenericName=Sim
+Comment=The Agrosim simulation (base only)
+Exec=python agrobot_ws/src/agrobot/agrobot_rl/gym-agrobot/gym_agrobot/envs/agrobot_exploration_env.py
+Icon=/opt/turtlebot3/openai_logo.png
+Type=Application
+Terminal=true
+Categories=Application
+X-KeepTerminal=true

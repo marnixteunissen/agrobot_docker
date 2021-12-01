@@ -1,0 +1,37 @@
+repositories:
+  ros2_control:
+    type: git
+    url: https://github.com/ros-controls/ros2_control.git
+    version: master
+  ros2_controllers:
+    type: git
+    url: https://github.com/ros-controls/ros2_controllers.git
+    version: master
+  turtlebot3:
+    type: git
+    url: https://github.com/ROBOTIS-GIT/turtlebot3.git
+    version: galactic-devel
+  turtlebot3_msgs:
+    type: git
+    url: https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
+    version: galactic-devel
+  turtlebot3_simulations:
+    type: git
+    url: https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
+    version: galactic-devel
+  DynamixelSDK:
+    type: git
+    url: https://github.com/ROBOTIS-GIT/DynamixelSDK.git
+    version: galactic-devel
+  hls_lfcd_lds_driver:
+    type: git
+    url: https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
+    version: galactic-devel
+  dynamixel_workbench:
+    type: git
+    url: https://github.com/ROBOTIS-GIT/dynamixel-workbench.git
+    version: ros2
+  nav2_test_utils:
+    type: git
+    url: https://github.com/fmrico/nav2_test_utils.git
+    version: master

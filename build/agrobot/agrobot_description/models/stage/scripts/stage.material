@@ -1,0 +1,13 @@
+material stage/skin
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture apple_texture.jpg
+      }
+    }
+  }
+}

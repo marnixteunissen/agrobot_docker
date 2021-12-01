@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Name=Start Moveit!
+GenericName=moveit
+Comment=start the moveit interface
+Exec=bash -c "source /opt/ros/kinetic/setup.bash&& source ~/catkin_ws/devel/setup.bash&& export TURTLEBOT3_MODEL=waffle_pi&& roslaunch turtlebot3_manipulation_moveit_config move_group.launch"
+Icon=/opt/turtlebot3/moveit_logo.png
+Type=Application
+Terminal=true
+Categories=Application
+X-KeepTerminal=true

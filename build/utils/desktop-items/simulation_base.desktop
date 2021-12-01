@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Name=Base Simulation
+GenericName=Sim
+Comment=The Agrosim simulation (base only)
+Exec=bash -c "source ~/.bashrc && ros2 launch agrobot_simulation agrobot_base_gazebo.launch.py"
+Icon=/opt/gazebo/Gazebo_logo.png
+Type=Application
+Terminal=true
+Categories=Application
+X-KeepTerminal=true

@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  simulation:
+    build:
+      context: ./build/
+    ports:
+      - "6080:80"
+    volumes:
+      - /agrobot:/root/home/agrobot_ws/src/agrobot
+      - /agrobot/agrobot_description/models:/root/home/.gazebo/models

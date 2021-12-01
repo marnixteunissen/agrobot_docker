@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Name=Controller
+GenericName=Control
+Comment=GUI controller for the simulation
+Exec=bash -c "source /opt/ros/kinetic/setup.bash&& source ~/catkin_ws/devel/setup.bash&& export TURTLEBOT3_MODEL=waffle_pi&& roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch"
+Icon=/opt/turtlebot3/controller_logo.png
+Type=Application
+Terminal=true
+Categories=Application
+X-KeepTerminal=true

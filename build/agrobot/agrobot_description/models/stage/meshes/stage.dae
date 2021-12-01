@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.90.0 commit date:2020-08-31, commit time:11:26, hash:0330d1af29c0</authoring_tool>
+    </contributor>
+    <created>2020-09-13T17:53:53</created>
+    <modified>2020-09-13T17:53:53</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_cameras>
+    <camera id="Camera-camera" name="Camera">
+      <optics>
+        <technique_common>
+          <perspective>
+            <xfov sid="xfov">39.59775</xfov>
+            <aspect_ratio>1.777778</aspect_ratio>
+            <znear sid="znear">0.1</znear>
+            <zfar sid="zfar">100</zfar>
+          </perspective>
+        </technique_common>
+      </optics>
+      <extra>
+        <technique profile="blender">
+          <shiftx sid="shiftx" type="float">0</shiftx>
+          <shifty sid="shifty" type="float">0</shifty>
+          <dof_distance sid="dof_distance" type="float">10</dof_distance>
+        </technique>
+      </extra>
+    </camera>
+  </library_cameras>
+  <library_lights>
+    <light id="Light-light" name="Light">
+      <technique_common>
+        <point>
+          <color sid="color">1000 1000 1000</color>
+          <constant_attenuation>1</constant_attenuation>
+          <linear_attenuation>0</linear_attenuation>
+          <quadratic_attenuation>0.00111109</quadratic_attenuation>
+        </point>
+      </technique_common>
+      <extra>
+        <technique profile="blender">
+          <type sid="type" type="int">0</type>
+          <flag sid="flag" type="int">0</flag>
+          <mode sid="mode" type="int">1</mode>
+          <gamma sid="blender_gamma" type="float">1</gamma>
+          <red sid="red" type="float">1</red>
+          <green sid="green" type="float">1</green>
+          <blue sid="blue" type="float">1</blue>
+          <shadow_r sid="blender_shadow_r" type="float">0</shadow_r>
+          <shadow_g sid="blender_shadow_g" type="float">0</shadow_g>
+          <shadow_b sid="blender_shadow_b" type="float">0</shadow_b>
+          <energy sid="blender_energy" type="float">1000</energy>
+          <dist sid="blender_dist" type="float">29.99998</dist>
+          <spotsize sid="spotsize" type="float">75</spotsize>
+          <spotblend sid="spotblend" type="float">0.15</spotblend>
+          <att1 sid="att1" type="float">0</att1>
+          <att2 sid="att2" type="float">1</att2>
+          <falloff_type sid="falloff_type" type="int">2</falloff_type>
+          <clipsta sid="clipsta" type="float">0.04999995</clipsta>
+          <clipend sid="clipend" type="float">30.002</clipend>
+          <bias sid="bias" type="float">1</bias>
+          <soft sid="soft" type="float">3</soft>
+          <bufsize sid="bufsize" type="int">2880</bufsize>
+          <samp sid="samp" type="int">3</samp>
+          <buffers sid="buffers" type="int">1</buffers>
+          <area_shape sid="area_shape" type="int">1</area_shape>
+          <area_size sid="area_size" type="float">0.1</area_size>
+          <area_sizey sid="area_sizey" type="float">0.1</area_sizey>
+          <area_sizez sid="area_sizez" type="float">1</area_sizez>
+        </technique>
+      </extra>
+    </light>
+  </library_lights>
+  <library_images/>
+  <library_geometries>
+    <geometry id="Physical_Environment_model-mesh" name="Physical Environment model">
+      <mesh>
+        <source id="Physical_Environment_model-mesh-positions">
+          <float_array id="Physical_Environment_model-mesh-positions-array" count="504">1682 2382 600 682 2482 600 682 2382 600 1682 2482 600 1750 -50 150 -50 -50 0 1750 -50 0 -50 -50 150 1067 0 100 894 310 100 894 0 100 1470 0 100 1297 310 100 1297 0 100 664 892 100 664 310 100 1700 892 100 1067 310 100 1470 310 100 1700 310 100 1700 1028 100 664 1628 100 664 1028 100 1700 1628 100 1700 1764 100 664 2364 100 664 1764 100 1700 2364 100 664 0 100 0 2500 100 0 0 100 664 2500 100 0 0 150 0 2500 150 664 2500 150 -50 2550 150 -50 2550 0 1700 2364 150 1700 1764 150 1750 2550 0 1750 2550 150 664 0 150 894 0 150 1067 0 150 1297 0 150 1470 0 150 1700 0 150 1700 310 150 1700 892 150 1700 1028 150 1700 1628 150 1700 2500 150 664 310 250 664 0 250 854 300 250 704 300 160 854 300 160 704 300 250 894 310 250 704 270 250 674 270 160 704 270 160 674 270 250 674 40 250 674 40 160 894 0 250 884 270 250 854 270 250 704 10 250 854 10 250 854 40 250 884 40 250 704 40 250 704 40 160 664 2500 180 664 2364 180 682 2382 180 682 2482 180 1682 2382 180 1700 2364 180 1682 2482 180 1700 2500 180 1067 310 250 1067 0 250 1257 300 250 1107 300 160 1257 300 160 1107 300 250 1297 310 250 1107 270 250 1077 270 160 1107 270 160 1077 270 250 664 1628 180 682 1646 180 664 1764 180 1700 1628 180 1682 1646 180 1682 1746 180 682 1746 180 1700 1764 180 682 1746 600 1682 1746 600 1682 1646 600 682 1646 600 1287 270 250 1257 270 250 1077 40 250 1107 10 250 1297 0 250 1257 10 250 1257 40 250 1287 40 250 1107 40 250 1107 40 160 1077 40 160 1287 40 160 1257 270 160 1257 40 160 1287 270 160 1257 10 160 1107 10 160 682 1010 600 1682 1010 180 682 1010 180 1682 1010 600 1682 910 600 1682 910 180 664 892 180 682 910 180 664 1028 180 1700 892 180 1700 1028 180 682 910 600 1690 40 160 1660 270 160 1660 40 160 1690 270 160 1660 10 160 1510 40 160 1510 10 160 1510 270 160 1510 300 160 1660 300 160 1480 270 160 1480 40 160 1510 270 250 1510 300 250 1690 270 250 1660 270 250 1660 40 250 1660 10 250 1510 10 250 1690 40 250 1510 40 250 1660 300 250 1700 0 250 1470 0 250 1480 40 250 1480 270 250 1700 310 250 1470 310 250 884 40 160 854 270 160 854 40 160 884 270 160 854 10 160 704 10 160</float_array>
+          <technique_common>
+            <accessor source="#Physical_Environment_model-mesh-positions-array" count="168" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Physical_Environment_model-mesh-normals">
+          <float_array id="Physical_Environment_model-mesh-normals-array" count="18">0 0 1 0 -1 0 1 0 0 -1 0 0 0 1 0 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#Physical_Environment_model-mesh-normals-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Physical_Environment_model-mesh-vertices">
+          <input semantic="POSITION" source="#Physical_Environment_model-mesh-positions"/>
+        </vertices>
+        <triangles count="332">
+          <input semantic="VERTEX" source="#Physical_Environment_model-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Physical_Environment_model-mesh-normals" offset="1"/>
+          <p>0 0 1 0 2 0 1 0 0 0 3 0 4 1 5 1 6 1 5 1 4 1 7 1 8 0 9 0 10 0 11 0 12 0 13 0 9 0 14 0 15 0 14 0 9 0 16 0 16 0 9 0 17 0 17 0 9 0 8 0 16 0 17 0 12 0 16 0 12 0 18 0 18 0 12 0 11 0 16 0 18 0 19 0 20 0 21 0 22 0 21 0 20 0 23 0 24 0 25 0 26 0 25 0 24 0 27 0 28 0 29 0 30 0 29 0 28 0 31 0 31 0 28 0 15 0 31 0 15 0 14 0 31 0 14 0 22 0 31 0 22 0 21 0 31 0 21 0 26 0 31 0 26 0 25 0 29 2 32 2 30 2 32 2 29 2 33 2 34 1 29 1 31 1 29 1 34 1 33 1 35 3 5 3 7 3 5 3 35 3 36 3 37 3 24 3 38 3 24 3 37 3 27 3 35 4 39 4 36 4 39 4 35 4 40 4 39 2 4 2 6 2 4 2 39 2 40 2 7 0 32 0 35 0 32 0 7 0 4 0 32 0 4 0 41 0 41 0 4 0 42 0 42 0 4 0 43 0 43 0 4 0 44 0 44 0 4 0 45 0 45 0 4 0 46 0 46 0 4 0 47 0 47 0 4 0 48 0 48 0 4 0 49 0 49 0 4 0 50 0 50 0 4 0 38 0 38 0 4 0 37 0 37 0 4 0 51 0 35 0 33 0 40 0 33 0 35 0 32 0 40 0 33 0 34 0 40 0 34 0 51 0 40 0 51 0 4 0 39 5 5 5 36 5 5 5 39 5 6 5 32 4 28 4 30 4 28 4 32 4 41 4 52 3 41 3 53 3 41 3 52 3 28 3 28 3 52 3 15 3 54 1 55 1 56 1 55 1 54 1 57 1 52 4 9 4 15 4 9 4 52 4 58 4 59 1 60 1 61 1 60 1 59 1 62 1 60 2 63 2 64 2 63 2 60 2 62 2 9 2 42 2 10 2 42 2 9 2 65 2 65 2 9 2 58 2 66 0 54 0 67 0 53 0 63 0 52 0 63 0 53 0 68 0 68 0 53 0 65 0 68 0 65 0 69 0 69 0 65 0 70 0 70 0 65 0 71 0 71 0 65 0 66 0 52 0 57 0 58 0 57 0 52 0 62 0 62 0 52 0 63 0 57 0 62 0 59 0 58 0 57 0 54 0 58 0 54 0 66 0 58 0 66 0 65 0 72 0 63 0 68 0 63 4 73 4 64 4 73 4 63 4 72 4 74 3 25 3 75 3 25 3 74 3 31 3 31 0 74 0 34 0 1 3 76 3 2 3 76 3 1 3 77 3 0 1 76 1 78 1 76 1 0 1 2 1 37 1 25 1 27 1 25 1 37 1 75 1 75 1 37 1 79 1 1 4 80 4 77 4 80 4 1 4 3 4 80 2 0 2 78 2 0 2 80 2 3 2 51 2 79 2 37 2 79 2 51 2 81 2 74 4 51 4 34 4 51 4 74 4 81 4 75 0 76 0 74 0 76 0 75 0 79 0 76 0 79 0 78 0 78 0 79 0 80 0 74 0 77 0 81 0 77 0 74 0 76 0 81 0 77 0 80 0 81 0 80 0 79 0 82 3 43 3 83 3 43 3 82 3 8 3 8 3 82 3 17 3 84 1 85 1 86 1 85 1 84 1 87 1 82 4 12 4 17 4 12 4 82 4 88 4 89 1 90 1 91 1 90 1 89 1 92 1 93 0 94 0 95 0 94 0 93 0 96 0 94 0 96 0 97 0 97 0 96 0 98 0 95 0 99 0 100 0 99 0 95 0 94 0 100 0 99 0 98 0 100 0 98 0 96 0 101 4 98 4 99 4 98 4 101 4 102 4 98 2 103 2 97 2 103 2 98 2 102 2 38 2 96 2 50 2 96 2 38 2 100 2 103 0 101 0 104 0 101 0 103 0 102 0 103 1 94 1 97 1 94 1 103 1 104 1 50 1 21 1 23 1 21 1 50 1 93 1 93 1 50 1 96 1 105 0 84 0 106 0 83 0 107 0 82 0 107 0 83 0 108 0 108 0 83 0 109 0 108 0 109 0 110 0 110 0 109 0 111 0 111 0 109 0 112 0 112 0 109 0 105 0 82 0 87 0 88 0 87 0 82 0 92 0 92 0 82 0 107 0 87 0 92 0 89 0 88 0 87 0 84 0 88 0 84 0 105 0 88 0 105 0 109 0 113 0 107 0 108 0 101 3 94 3 104 3 94 3 101 3 99 3 107 4 114 4 115 4 114 4 107 4 113 4 116 0 117 0 118 0 117 0 116 0 119 0 120 0 114 0 121 0 114 0 120 0 91 0 91 0 120 0 85 0 85 0 120 0 86 0 86 0 120 0 118 0 86 0 118 0 117 0 114 0 90 0 115 0 90 0 114 0 91 0 95 4 24 4 26 4 24 4 95 4 38 4 38 4 95 4 100 4 95 3 21 3 93 3 21 3 95 3 26 3 90 2 107 2 115 2 107 2 90 2 92 2 12 2 44 2 13 2 44 2 12 2 109 2 109 2 12 2 88 2 108 4 120 4 121 4 120 4 108 4 110 4 111 4 116 4 118 4 116 4 111 4 112 4 114 2 108 2 121 2 108 2 114 2 113 2 42 4 8 4 10 4 8 4 42 4 43 4 85 2 89 2 91 2 89 2 85 2 87 2 111 3 120 3 110 3 120 3 111 3 118 3 109 1 43 1 44 1 43 1 109 1 83 1 105 3 116 3 112 3 116 3 105 3 119 3 105 1 117 1 119 1 117 1 105 1 106 1 84 3 117 3 106 3 117 3 84 3 86 3 50 3 20 3 49 3 20 3 50 3 23 3 122 4 123 4 124 4 123 4 122 4 125 4 123 2 126 2 127 2 126 2 123 2 125 2 128 0 129 0 130 0 129 0 128 0 131 0 129 0 131 0 127 0 127 0 131 0 123 0 130 0 124 0 132 0 124 0 130 0 129 0 132 0 124 0 123 0 132 0 123 0 131 0 126 1 129 1 127 1 129 1 126 1 133 1 130 4 20 4 22 4 20 4 130 4 49 4 49 4 130 4 132 4 122 3 129 3 133 3 129 3 122 3 124 3 126 0 122 0 133 0 122 0 126 0 125 0 130 3 14 3 128 3 14 3 130 3 22 3 49 2 131 2 48 2 131 2 49 2 132 2 48 3 19 3 47 3 19 3 48 3 16 3 48 1 14 1 16 1 14 1 48 1 128 1 128 1 48 1 131 1 134 0 135 0 136 0 135 0 134 0 137 0 138 0 139 0 140 0 139 0 138 0 141 0 141 0 138 0 142 0 142 0 138 0 143 0 143 0 138 0 136 0 143 0 136 0 135 0 139 0 144 0 145 0 144 0 139 0 141 0 142 2 146 2 141 2 146 2 142 2 147 2 148 1 135 1 137 1 135 1 148 1 149 1 150 3 138 3 151 3 138 3 150 3 136 3 152 4 138 4 140 4 138 4 152 4 151 4 148 3 134 3 153 3 134 3 148 3 137 3 150 4 134 4 136 4 134 4 150 4 153 4 139 2 152 2 140 2 152 2 139 2 154 2 155 3 135 3 149 3 135 3 155 3 143 3 156 1 45 1 46 1 45 1 156 1 157 1 144 2 158 2 145 2 158 2 144 2 159 2 155 1 142 1 143 1 142 1 155 1 147 1 47 2 156 2 46 2 156 2 47 2 160 2 161 3 45 3 157 3 45 3 161 3 11 3 11 3 161 3 18 3 161 4 19 4 18 4 19 4 161 4 47 4 47 4 161 4 160 4 146 1 144 1 141 1 144 1 146 1 159 1 148 0 155 0 149 0 157 0 158 0 161 0 158 0 157 0 152 0 152 0 157 0 156 0 152 0 156 0 151 0 151 0 156 0 150 0 150 0 156 0 153 0 153 0 156 0 148 0 161 0 147 0 160 0 147 0 161 0 159 0 159 0 161 0 158 0 147 0 159 0 146 0 160 0 147 0 155 0 160 0 155 0 148 0 160 0 148 0 156 0 154 0 158 0 152 0 158 4 139 4 145 4 139 4 158 4 154 4 44 4 11 4 13 4 11 4 44 4 45 4 162 0 163 0 164 0 163 0 162 0 165 0 166 0 73 0 167 0 73 0 166 0 61 0 61 0 166 0 55 0 55 0 166 0 56 0 56 0 166 0 164 0 56 0 164 0 163 0 73 0 60 0 64 0 60 0 73 0 61 0 55 2 59 2 61 2 59 2 55 2 57 2 68 4 166 4 167 4 166 4 68 4 69 4 65 1 41 1 42 1 41 1 65 1 53 1 66 1 163 1 165 1 163 1 66 1 67 1 70 3 166 3 69 3 166 3 70 3 164 3 66 3 162 3 71 3 162 3 66 3 165 3 70 4 162 4 164 4 162 4 70 4 71 4 54 3 163 3 67 3 163 3 54 3 56 3 73 2 68 2 167 2 68 2 73 2 72 2</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="Physical_Environment_model" name="Physical Environment model" type="NODE">
+        <matrix sid="transform">0.001 0 0 0 0 0.001 0 0 0 0 0.001 0 0 0 0 1</matrix>
+        <instance_geometry url="#Physical_Environment_model-mesh" name="Physical Environment model"/>
+      </node>
+      <node id="Camera" name="Camera" type="NODE">
+        <matrix sid="transform">0.6859207 -0.3240135 0.6515582 7.358891 0.7276763 0.3054208 -0.6141704 -6.925791 0 0.8953956 0.4452714 4.958309 0 0 0 1</matrix>
+        <instance_camera url="#Camera-camera"/>
+      </node>
+      <node id="Light" name="Light" type="NODE">
+        <matrix sid="transform">-0.2908646 -0.7711008 0.5663932 4.076245 0.9551712 -0.1998834 0.2183912 1.005454 -0.05518906 0.6045247 0.7946723 5.903862 0 0 0 1</matrix>
+        <instance_light url="#Light-light"/>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
