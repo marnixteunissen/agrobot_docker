@@ -90,7 +90,7 @@ class AgrobotExploreEnv(gym.Env):
         cmd += 'y: ' + str(action[1]) + ', z: 0.0}, orientation: {'
         cmd += 'w: ' + str(action[2]) + '}}}" -1'
         # Publish the navigation goal to ros through the /set_goal service:
-        print(f"Navigating to: (x={action[0]} y={action[1]} w={action[2]})")
+        # print(f"Navigating to: (x={action[0]} y={action[1]} w={action[2]})")
         run(cmd, shell=True, stdout=PIPE)
         self.last_map_value = np.sum(np.abs(self.state - 127) / 127)
         self.nav_pixel = self.state[int((action[0]+5)*20), int((action[1]+5)*20)]
@@ -184,7 +184,8 @@ class AgrobotExploreEnv(gym.Env):
         nav_reward = 0.2 if sum(self.nav_pixel) == 0 else 0
 
         total_reward = fruit_reward + map_reward + contour_reward - self.step_dicount + nav_reward
-        print(f'Total: {total_reward}, Nav reward: {nav_reward}, Map reward: {map_reward}, contour: {contour_reward}')
+        # print(f'Total: {total_reward}, Nav reward: {nav_reward}, Map reward: {map_reward}, contour: {contour_reward}')
+        print(f'Step reward: {total_reward}')
         return total_reward
 
     def start_ros_simulation(self):
