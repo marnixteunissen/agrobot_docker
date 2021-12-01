@@ -50,15 +50,15 @@ RUN apt install nano -y
 RUN apt install htop -y
 
 # Install TurtleBot3 from github
-RUN /bin/bash -c 'mkdir $HOME/agrobot_ws && mkdir $HOME/agrobot_ws/src'
-RUN /bin/bash -c '. /opt/ros/galactic/setup.bash; cd agrobot_ws/; colcon build --symlink-install'
+
+RUN /bin/bash -c '. /opt/ros/galactic/setup.bash; cd $HOME/agrobot_ws/; colcon build --symlink-install'
 COPY agrobot.repos $HOME/agrobot_ws/src
 RUN cd $HOME/agrobot_ws/src && vcs import < agrobot.repos
-RUN /bin/bash -c '. /opt/ros/galactic/setup.bash; cd agrobot_ws/; colcon build --symlink-install'
+RUN /bin/bash -c '. /opt/ros/galactic/setup.bash; cd $HOME/agrobot_ws/; colcon build --symlink-install'
 
 # Install agrobot packages
 COPY agrobot $HOME/agrobot_ws/src/agrobot
-RUN /bin/bash -c '. /opt/ros/galactic/setup.bash; cd ~/agrobot_ws/; colcon build --symlink-install'
+RUN /bin/bash -c '. /opt/ros/galactic/setup.bash; cd $HOME/agrobot_ws/; colcon build --symlink-install'
 RUN /bin/bash -c 'mkdir -p $HOME/.gazebo/models'
 RUN cp -a $HOME/agrobot_ws/src/agrobot/agrobot_description/models/. $HOME/.gazebo/models/
 RUN cd $HOME/agrobot_ws/src/agrobot/agrobot_rl/ && pip install -e gym-agrobot
