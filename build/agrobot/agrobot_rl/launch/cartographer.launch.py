@@ -45,7 +45,7 @@ def generate_launch_description():
         executable='input_map_constructor.py',
         name='grid_map',
         output='screen',
-        parameters=[{'show': True}],
+        parameters=[{'show': False}],
     )
     # launch navigation stack:
     launch_nav2 = IncludeLaunchDescription(
@@ -58,7 +58,7 @@ def generate_launch_description():
     return LaunchDescription([
         DeclareLaunchArgument(
             'use_rviz',
-            default_value='true',
+            default_value='false',
             description='launch RViz if true'),
         DeclareLaunchArgument(
             'rviz_config',
